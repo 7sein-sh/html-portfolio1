@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/main.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  </head>
+<body>
+    <!-----------------------------navbar------------------------------------------------->    
+    
+    <nav class="navbar navbar-expand-md navbar-inverse fixed-top">
+        <div class="container-xl">
+          <i class="bi bi-book-half"></i>
+          <a class="navbar-brand" href="#hussein">
+            <span class="fw-3 text-secondary">
+              Holla Hussein
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#topics">about the books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">revies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <a class="btn btn-secondary" href="#pricing">buy now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-----------------------------content and image--------------------------------->   
+    <section id="hussein">
+        <div class="container-lg my-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">hussein shebli</div>
+                        <div class="display-5 text-muted">hewbjybdgewbycjh</div>
+                    </h1>
+                    <a href="" id="pricing" class="btn btn-secondary btn-lg">buy now</a>
+                    <!---------------------open sidebar/offcanvas---------------------------->
+                    <a class="d-block mt-3" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+                      Link with href
+                    </a>
+                </div>
+                <div class="col-md-5 text-center text-md-start d-none d-md-block">
+                    <img class="img-fluid tt"  data-toggle="tooltip" title="you hover on me!" src="data:image/jpeg;base64,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" alt="ebook">
+                  
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------pricing------------------------------------------>
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+          <div class="text-center">
+            <h2>Pricing Plane</h2>
+            <p class="lead text-muted">Choose a pricing plane to suit you</p>
+          </div>
+          <div class="row justify-content-center align-items-center g-0">
+            <div class="col-8 col-lg-4 col-xl-3">
+              <div class="card border-0">
+                <div class="card-body text-center py-4">
+                    <h4 class="card-title">starter edition</h4>
+                    <p class="card-subtitle lead">ebook Download only</p>
+                    <p class="display-5 text-primary fw-bold my-4">$12.99</p>
+                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur 
+                      adipisicing elit.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-lg-4 ">
+              <div class="card border-primary border-2">
+                <div class="card-header text-center text-primary">Most popular</div>
+                <div class="card-body text-center py-4">
+                    <h4 class="card-title">starter edition</h4>
+                    <p class="card-subtitle lead">ebook Download only</p>
+                    <p class="display-4 text-primary fw-bold my-4">$18.99</p>
+                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur 
+                      adipisicing elit.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+                    
+                </div>
+          </div>
+        </div>
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+                <h4 class="card-title">Ultimate edition</h4>
+                <p class="card-subtitle lead">Download, update and extras</p>
+                <p class="display-5 text-primary fw-bold my-4">$28.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      
+    </section>
+    <!----------------------------------------------Topics------------------------------------------------>
+    <scetion id="topics">
+        <div class="container-md my-5">
+          <div class="text-center">
+            <h2>Inside the book...</h2>
+            <p class="lead text-muted">A quick giance at tge topic you will learn</p> 
+          </div>
+          <div class="row my-5 g-5 justify-content-around align-items-center">
+              <div class="col-6 col-lg-4">
+                <img src="data:image/jpeg;base64,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" class="img-fluid" alt="kindle image">
+              </div>
+              <!------------------------accordion------------------------->
+             <div class="col-lg-6">
+              <div class="accordion" id="chapters">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#chapter-1" 
+                    aria-expanded="false" aria-controls="chapter-1">
+                      chapter-1 your first Web Page
+                    </button>
+
+                  </h2>
+                  <div class="accordion-collapse collapse show" id="chapter-1" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                      <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor illum ex exercitationem cupiditate libero!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at fugit soluta sapiente cumque aspernatur.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#chapter-2" 
+                    aria-expanded="false" aria-controls="chapter-2">
+                      chapter-2 your first Web Page
+                    </button>
+
+                  </h2>
+                  <div class="accordion-collapse collapse" id="chapter-2" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                      <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor illum ex exercitationem cupiditate libero!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at fugit soluta sapiente cumque aspernatur.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#chapter-3" 
+                    aria-expanded="false" aria-controls="chapter-3">
+                      chapter-3 your first Web Page
+                    </button>
+
+                  </h2>
+                  <div class="accordion-collapse collapse " id="chapter-3" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                      <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor illum ex exercitationem cupiditate libero!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at fugit soluta sapiente cumque aspernatur.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-4">
+                    <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#chapter-4" 
+                    aria-expanded="false" aria-controls="chapter-4">
+                      chapter-4 your first Web Page
+                    </button>
+
+                  </h2>
+                  <div class="accordion-collapse collapse " id="chapter-4" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                      <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor illum ex exercitationem cupiditate libero!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at fugit soluta sapiente cumque aspernatur.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-5">
+                    <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#chapter-5" 
+                    aria-expanded="false" aria-controls="chapter-5">
+                      chapter-5 your first Web Page
+                    </button>
+
+                  </h2>
+                  <div class="accordion-collapse collapse " id="chapter-5" aria-labelledby="heading-5" data-bs-parent="#chapters">
+                      <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor illum ex exercitationem cupiditate libero!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at fugit soluta sapiente cumque aspernatur.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </scetion>
+
+    <!--------------------------------------List group----------------------------------------------->
+   
+    <section id="review" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+          <p class="lead">What my student have said about the book...</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+          <div class="list-group">
+            <div class="list-group-item py-3">
+              <div class="py-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Debitis sint voluptatem veniam iusto sit similique mollitia ducimus iure sequi hic.
+                 Provident, minima a. Libero a, dolore in quos iste aspernatur!
+              </p>
+              <small>Review by Hussein</small>
+            </div>
+            <div class="list-group-item py-3">
+              <div class="py-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Debitis sint voluptatem veniam iusto sit similique mollitia ducimus iure sequi hic.
+                 Provident, minima a. Libero a, dolore in quos iste aspernatur!
+              </p>
+              <small>Review by Hussein</small>
+            </div>
+            <div class="list-group-item py-3">
+              <div class="py-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Debitis sint voluptatem veniam iusto sit similique mollitia ducimus iure sequi hic.
+                 Provident, minima a. Libero a, dolore in quos iste aspernatur!
+              </p>
+              <small>Review by Hussein</small>
+            </div>
+            <div class="list-group-item py-3">
+              <div class="py-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Debitis sint voluptatem veniam iusto sit similique mollitia ducimus iure sequi hic.
+                 Provident, minima a. Libero a, dolore in quos iste aspernatur!
+              </p>
+              <small>Review by Hussein</small>
+            </div>
+            <div class="list-group-item py-3">
+              <div class="py-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Debitis sint voluptatem veniam iusto sit similique mollitia ducimus iure sequi hic.
+                 Provident, minima a. Libero a, dolore in quos iste aspernatur!
+              </p>
+              <small>Review by Hussein</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+   
+   <!-------------------------------------forms------------------------------------------->
+   <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in touch</h2>
+          <p class="lead">Question toask? fill out the form to contact me directly...</p>
+        </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+              <form>
+                <div class="mb-3">
+                  
+                  <label for="email" class="form-label">Email address: </label>
+                  <div class="input-group mb-4">
+                    <span>
+                      <i class="bi bi-envelope-fill"></i>                    
+                    </span>
+                    <input type="email" class="form-control" id="email" placeholder="e.g. hussein@example.com">
+                    
+                    <i class="bi bi-question-circle text-muted tt" data-toggle="tooltip" title="Enter an email address we can reply to!"></i>
+                  </div>
+
+                 
+                  <label for="name" class="form-label">Name: </label>
+                  <div class="input-group mb-4">
+                    <span>
+                      <i class="bi bi-person-fill"></i>
+                    </span>
+                  <input type="text" class="form-control" id="name" placeholder="e.g. Hussein">
+                  </div>
+                  <label for="subject" class="form-label">What is your question about </label>
+                  <div class="input-group mb-4">
+                    <span>
+                      <i class="bi bi-person-vcard-fill"></i>
+                    </span>
+                  <select class="form-select" id="subject">
+                    <option selected>Open this select menu</option>
+                    <option value="pricing">pricing query</option>
+                    <option value="content">Content query</option>
+                    <option value="other">Other query</option>
+                  </select>
+                </div>
+                  <div class="form-floating mb-4 mt-5">
+                  <textarea  id="query" class="form-control" style="height: 140px;"></textarea>
+                  <label for="query" class="form-label">Your Query </label>
+                  
+                </div>
+                <div class="my-3 text-center">
+                  <button type="submit" class="btn btn-secondary">Submit</button>
+                </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+   </section>
+   
+   <section class="bg-light">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Stay in the loop</h2>
+        <p class="lead">get the latest update as they happen...</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione dolorem incidunt voluptates ad, corporis facere perferendis consectetur eveniet quaerat dolore optio laboriosam, iusto voluptate minus! Earum, minus sapiente eos, perferendis dicta nostrum nisi at quis beatae quaerat suscipit et molestiae nobis nesciunt voluptate, 
+            doloribus vitae impedit reprehenderit ipsum fugiat?
+          </p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for updates</button>
+        </div>
+      </div>
+    </div>
+   </section>
+   
+   <!-------------------------model------------------------------->
+   <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title " id="modal-title">Get the latest update</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eligendi eius assumenda cum omnis, minus ducimus eos id inventore fuga a quae qui ab iusto tenetur repellat cupiditate laudantium saepe dicta error recusandae deleniti. Iure exercitationem voluptates eius quidem ipsum ullam beatae amet fuga deserunt possimus neque reprehenderit animi qui explicabo fugiat, adipisci, 
+          quisquam corporis, suscipit alias assumenda iste perferendis!
+        </p>  
+        <label for="modal-email" class="form-label">Your Email adrress: </label>  
+        <input type="email" class="form-control" id="modal-email" placeholder="e.g. Hussein@Example.com">
+        
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submits</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   
+   <!-------------offcanvas----------->
+    <div  class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button id="book-dropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Choose a book
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li><a class="dropdown-item" href="#">you will be professinal</a></li>
+            <li><a class="dropdown-item" href="#">ya can learn react</a></li>
+            <li><a class="dropdown-item" href="#">always thank allah </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/main.js" text="text/JavaScript"></script>    
+</body>
+</html>
